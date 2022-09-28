@@ -1,0 +1,27 @@
+{
+  "name": "tausly-lang",
+  "publisher": "MelekTaus Moribundus",
+  "displayName": "Tausly",
+  "description": "Syntax highlighting for Tausly",
+  "icon": "https://raw.githubusercontent.com/themelektaus/tausly-lang/master/icon.png",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "tausly",
+      "aliases": ["Tausly", "tausly"],
+      "extensions": [".tausly"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "tausly",
+      "scopeName": "source.tausly",
+      "path": "./syntaxes/tausly.tmLanguage.json"
+    }]
+  }
+}

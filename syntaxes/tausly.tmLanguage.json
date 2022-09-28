@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Tausly",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.tausly",
+				"match": "\\s*\\b(ECHO|LOG|SLEEP|NORMALIZE|SMOOTHDAMP|SIZE|CLEAR|COLOR|FILL|TEXT|ALIGN\\sLEFT|ALIGN\\sCENTER|ALIGN\\sRIGHT|DIM|LABEL|INIT|SET|DIM|GAIN|BPM|TIME\\sSIGNATURE|REPEAT|TYPE|REVERB|SHEET|PLAY|STOP|RESET|DRAW|TRANSLATE|ROTATE|SCALE|ATTACK|RELEASE|CURSOR\\sSHOW|CURSOR\\sHIDE|FUNC|RETURNS|SCOPE|WRITE)\\b\\s*"
+			}, {
+				"name": "support.function.tausly",
+				"match": "\\s*\\b(CEIL|CLAMP|FLOOR|INPUT|PRESS|RELEASE|INT|MAX|MIN|XRANDOM|RANDOM|ROUND|FPS|LEN|ABS|FRAMETIME|SUM|READ)\\b\\s*"
+			}, {
+				"name": "variable.name.tausly",
+				"match": "\\s*\\b(RETURN\\sTO|RETURN)\\b\\s*"
+			}, {
+				"name": "variable.name.tausly",
+				"match": "^\\s*\\b(GOTO|GOSUB)\\b.*$"
+			}, {
+				"name": "keyword.tausly",
+				"match": "\\s*\\b(IF|NOT|THEN|AND|OR|ELSE|END|FOR|TO|WHILE|LOOP|NEXT|BREAK|SONG|INSTRUMENT|SPRITE|FRAME|BEGIN\\sGAMELOOP|BEGIN\\sTRANSFORM)\\b\\s*"
+			}, {
+				"name": "constant.numeric.tausly",
+				"match": "\\s*\\b(DELTATIME|TIME|WIDTH|HEIGHT|TRUE|FALSE|NULL|MOUSEX|MOUSEY|VALUE)\\b\\s*"
+			}, {
+				"name": "constant.numeric.tausly",
+				"match": "\\b[0-9\\.]+\\b"
+			}, {
+				"name": "variable.name.tausly",
+				"match": ".+\\:\\s*$"
+			}, {
+				"name": "variable.name.tausly",
+				"match": "^\\s*\\*.*"
+			}, {
+				"name": "keyword.control.tausly",
+				"match": "\\b\\_[A-Za-z0-9]+\\b"
+			}, {
+				"name": "constant.numeric.tausly",
+				"match": "\\s+(?:\\=|\\+|\\-|\\*|\\/|\\+\\=|\\-\\=|\\*\\=|\\/\\=|\\>\\=|\\<\\=|\\<\\>|\\>|\\<)\\s+"
+			}, {
+				"name": "comment.line.tausly",
+				"match": "^[^=]+$"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.tausly",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.tausly",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.tausly"
+}
