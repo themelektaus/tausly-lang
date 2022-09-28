@@ -27,5 +27,9 @@
       "scopeName": "source.tausly",
       "path": "./syntaxes/tausly.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themelektaus/tausly-lang.git"
   }
 }
