@@ -1,12 +1,16 @@
 {
   "name": "tausly-lang",
-  "publisher": "MelekTaus Moribundus",
+  "publisher": "MelekTaus",
   "displayName": "Tausly",
   "description": "Syntax highlighting for Tausly",
   "icon": "icon.png",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.71.0"
+  },
+  "author": {
+    "name": "MelekTaus Moribundus",
+    "email": "melektaus@outlook.at"
   },
   "categories": [
     "Programming Languages"
