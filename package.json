@@ -1,10 +1,10 @@
 {
   "name": "tausly-lang",
-  "publisher": "smueck",
+  "publisher": "tausi",
   "displayName": "Tausly",
   "description": "Syntax highlighting for Tausly",
   "icon": "icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
