@@ -4,6 +4,10 @@ Syntax highlighting for Tausly.
 ## Known Issues
 - Multiline instructions are displayed as comment
 
+## 1.0.2
+### Added
+- Keyword: "LERP"
+
 ## 1.0.1
 ### Added
 - Keyword: "BEGIN CLIP"
